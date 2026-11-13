@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dog Breed Explorer | Riverbend Animal Shelter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <p class="shelter-name">Riverbend Animal Shelter</p>
+    <h1>Dog Breed Explorer</h1>
+    <p class="tagline">Thinking about adopting? Find a breed, then meet one.</p>
+  </header>
+
+  <main>
+    <section id="find" aria-labelledby="find-heading">
+      <h2 id="find-heading">Find a breed</h2>
+      <label for="breed-search">Search the breeds</label>
+      <input id="breed-search" type="search" placeholder="Try terrier or hound" autocomplete="off">
+      <button id="surprise-me" type="button">Surprise me</button>
+      <p id="list-status"></p>
+      <p id="search-status" role="status"></p>
+      <ul id="breed-list"></ul>
+    </section>
+
+    <section id="meet" aria-labelledby="meet-heading">
+      <h2 id="meet-heading">Meet the breed</h2>
+      <p id="photo-status" role="status">Pick a breed to see a dog.</p>
+      <img id="dog-photo" src="" alt="" hidden>
+      <button id="try-again" type="button" hidden>Try again</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dog photos from the free <a href="https://dog.ceo/dog-api/">Dog CEO API</a>.</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* The Dog Breed Explorer's look. Ready to use: you don't need to change this file. */
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #2b2118;
+  background-color: #fbf7f1;
+}
+
+header {
+  padding: 24px 16px;
+  text-align: center;
+  color: #fbf7f1;
+  background-color: #2f5d50;
+}
+
+.shelter-name {
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 4px 0;
+  font-size: 2.25rem;
+}
+
+.tagline {
+  margin: 0;
+}
+
+main {
+  display: grid;
+  gap: 32px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px 32px;
+}
+
+@media (min-width: 760px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 12px;
+  font: inherit;
+  border: 2px solid #8a7b6b;
+  border-radius: 6px;
+}
+
+#surprise-me {
+  margin-top: 8px;
+}
+
+#list-status {
+  color: #5c4f42;
+  font-size: 0.9rem;
+}
+
+#search-status {
+  font-weight: bold;
+}
+
+#breed-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-height: 420px;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+button {
+  padding: 6px 12px;
+  font: inherit;
+  color: #ffffff;
+  background-color: #2f5d50;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #23463c;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #e09f3e;
+  outline-offset: 2px;
+}
+
+#dog-photo {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  background-color: #efe6da;
+  border-radius: 8px;
+}
+
+#dog-photo[hidden],
+#try-again[hidden] {
+  display: none;
+}
+
+#try-again {
+  margin-top: 12px;
+  background-color: #a23b2a;
+}
+
+footer {
+  padding: 16px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #2f5d50;
+}
